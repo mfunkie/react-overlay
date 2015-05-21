@@ -2,10 +2,14 @@
   "name": "react-overlay",
   "version": "0.0.2",
   "description": "A React Component used to overlay content.",
-  "main": "index.js",
+  "main": "dist/App.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "files": [
+    "README.md",
+    "dist/**"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/mfunkie/react-overlay.git"
@@ -19,5 +23,9 @@
   "bugs": {
     "url": "https://github.com/mfunkie/react-overlay/issues"
   },
-  "homepage": "https://github.com/mfunkie/react-overlay"
+  "homepage": "https://github.com/mfunkie/react-overlay",
+  "devDependencies": {
+    "gulp": "^3.8.11",
+    "gulp-babel": "^5.1.0"
+  }
 }
