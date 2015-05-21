@@ -1,4 +1,4 @@
-# react-overlay
+# React Overlay [![npm version](https://badge.fury.io/js/react-overlay.svg)](http://badge.fury.io/js/react-overlay)
 A React component used to overlay content.
 
 ## Getting Started
