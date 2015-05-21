@@ -84,7 +84,8 @@ var Overlay = (function (_Component) {
 })(_react.Component);
 
 Overlay.propTypes = {
-  container: _react.PropTypes.object
+  container: _react.PropTypes.object,
+  elementType: _react.PropTypes.string
 };
 Overlay.defaultProps = {
   container: document.body,

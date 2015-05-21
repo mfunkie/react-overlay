@@ -53,7 +53,8 @@ class Overlay extends Component {
 }
 
 Overlay.propTypes = {
-  container: PropTypes.object
+  container:   PropTypes.object,
+  elementType: PropTypes.string
 };
 Overlay.defaultProps = {
   container:   document.body,
