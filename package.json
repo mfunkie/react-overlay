@@ -1,6 +1,6 @@
 {
   "name": "react-overlay",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A React Component used to overlay content.",
   "main": "dist/App.js",
   "scripts": {
@@ -27,5 +27,8 @@
   "devDependencies": {
     "gulp": "^3.8.11",
     "gulp-babel": "^5.1.0"
+  },
+  "dependencies": {
+    "react": "^0.13.3"
   }
 }

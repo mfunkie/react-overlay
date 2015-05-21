@@ -1,4 +1,4 @@
-const { Children, Component, PropTypes } = React;
+import React, { Children, Component, PropTypes } from 'react';
 
 class Overlay extends Component {
   constructor(props) {
