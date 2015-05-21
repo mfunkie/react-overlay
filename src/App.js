@@ -1,5 +1,2 @@
-import Overlay from './Overlay.js';
-
-export default {
-  Overlay
-};
+const Overlay  = require('./Overlay');
+module.exports = { Overlay };

@@ -1,0 +1,29 @@
+{
+  "dist/Overlay.js": {
+    "description": "",
+    "props": {
+      "container": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "",
+        "defaultValue": {
+          "value": "document.body",
+          "computed": true
+        }
+      },
+      "elementType": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "",
+        "defaultValue": {
+          "value": "'div'",
+          "computed": false
+        }
+      }
+    }
+  }
+}

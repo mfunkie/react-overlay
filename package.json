@@ -26,9 +26,13 @@
   "homepage": "https://github.com/mfunkie/react-overlay",
   "devDependencies": {
     "gulp": "^3.8.11",
-    "gulp-babel": "^5.1.0"
+    "gulp-babel": "^5.1.0",
+    "react-docgen": "^1.3.0"
   },
   "dependencies": {
     "react": "^0.13.3"
+  },
+  "scripts": {
+    "docs": "react-docgen dist/ --pretty --o ./docs.json"
   }
 }

@@ -1,18 +1,27 @@
-import React, { Children, Component, PropTypes } from 'react';
+const React = require('react');
+const { PropTypes } = React;
 
-class Overlay extends Component {
-  constructor(props) {
-    super(props);
-  }
+const Overlay = React.createClass({
+  propTypes: {
+    container:   PropTypes.object,
+    elementType: PropTypes.string
+  },
+
+  getDefaultProps() {
+    return {
+      container:   document.body,
+      elementType: 'div'
+    };
+  },
 
   shouldComponentUpdate() {
     return false;
-  }
+  },
 
   componentDidMount() {
     this.buildContainer();
     this.renderOverlay();
-  }
+  },
 
   componentWillReceiveProps(nextProps) {
     if (this.props.container !== nextProps.container) {
@@ -20,24 +29,24 @@ class Overlay extends Component {
       this.buildContainer(nextProps);
     }
     this.renderOverlay(nextProps);
-  }
+  },
 
   componentWillUnmount() {
     React.unmountComponentAtNode(this._overlayContainer);
     this.removeContainer();
-  }
+  },
 
   buildContainer(props) {
     const thisProps = props || this.props;
     this._overlayContainer = document.createElement(thisProps.elementType);
     const container = thisProps.container;
     container.appendChild(this._overlayContainer);
-  }
+  },
 
   removeContainer() {
     this.props.container.removeChild(this._overlayContainer);
     this._overlayContainer = null;
-  }
+  },
 
   renderOverlay(props) {
     const thisProps = props || this.props;
@@ -45,20 +54,11 @@ class Overlay extends Component {
       React.Children.only(thisProps.children),
       this._overlayContainer
     );
-  }
+  },
 
   render() {
     return null;
   }
-}
+});
 
-Overlay.propTypes = {
-  container:   PropTypes.object,
-  elementType: PropTypes.string
-};
-Overlay.defaultProps = {
-  container:   document.body,
-  elementType: 'div'
-};
-
-export default Overlay;
+module.exports = Overlay;
