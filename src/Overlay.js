@@ -2,6 +2,8 @@ const React = require('react');
 const { PropTypes } = React;
 
 const Overlay = React.createClass({
+  displayName: 'Overlay',
+
   propTypes: {
     container:   PropTypes.object,
     elementType: PropTypes.string
