@@ -1,25 +1,33 @@
 # react-overlay
-A React Component used to Overlay content
+A React component used to overlay content.
 
 ## Getting Started
 
 Install react-overlay with npm
 
-```npm install react-overlay --save```
+```js
+npm install react-overlay --save
+```
 
 Require the Overlay component in your code
 
-```import { Overlay } from 'react-overlay';```
+```js
+import { Overlay } from 'react-overlay';
+// or
+const { Overlay } = require('react-overlay');
+// or
+var Overlay = require('react-overlay').Overlay;
+```
 
 Use the overlay in your code
 
 ```js
 render() {
-// ...
+  // ...
   return (
     <div>
       <Overlay>
-        I am attached to the body!
+        <span>I am attached to the body!</span>
       </Overlay>
     </div>
   );
