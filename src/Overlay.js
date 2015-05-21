@@ -59,3 +59,5 @@ Overlay.defaultProps = {
   container:   document.body,
   elementType: 'div'
 };
+
+export default Overlay;
