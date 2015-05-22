@@ -36,7 +36,6 @@ var Overlay = React.createClass({
   },
 
   componentWillUnmount: function componentWillUnmount() {
-    React.unmountComponentAtNode(this._overlayContainer);
     this.removeContainer();
   },
 
@@ -48,6 +47,7 @@ var Overlay = React.createClass({
   },
 
   removeContainer: function removeContainer() {
+    React.unmountComponentAtNode(this._overlayContainer);
     this.props.container.removeChild(this._overlayContainer);
     this._overlayContainer = null;
   },
