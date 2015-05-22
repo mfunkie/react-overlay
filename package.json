@@ -1,6 +1,6 @@
 {
   "name": "react-overlay",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "A React Component used to overlay content.",
   "main": "dist/App.js",
   "scripts": {
