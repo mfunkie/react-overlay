@@ -1,6 +1,10 @@
 # React Overlay [![npm version](https://badge.fury.io/js/react-overlay.svg)](http://badge.fury.io/js/react-overlay)
 A React component used to overlay content.
 
+## Deprecated Warning
+
+0.1.7 will likely be the last release of react-overlay.  Use [react-overlays](https://github.com/react-bootstrap/react-overlays) instead.  It's awesome!
+
 ## Getting Started
 
 Install react-overlay with npm
